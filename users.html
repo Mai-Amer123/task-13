@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Management</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <h2>AdminPanel</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="users.html" class="active">Users</a>
+        </nav>
+
+        <a href="index.html" class="logout">Logout</a>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="navbar">
+            <div>
+                <h3>Users Management</h3>
+                <p>Manage and organize your users</p>
+            </div>
+
+            <div class="admin-info">
+                <span>AD</span>
+                <div>
+                    <h4>Alex Morgan</h4>
+                    <p>Super Admin</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="page-heading">
+                <div>
+                    <h1>All Users</h1>
+                    <p>Manage your team members</p>
+                </div>
+
+                <a href="add-user.html" class="primary-btn">
+                    + Add User
+                </a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Role</th>
+                            <th>Email Address</th>
+                            <th>Salary</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="usersTable">
+                    </tbody>
+                </table>
+
+                <p id="emptyMessage" class="empty-message">
+                    No users found.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="JS/users.js"></script>
+</body>
+
+</html>

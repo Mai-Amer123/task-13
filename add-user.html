@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>AdminPanel</h2>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="users.html" class="active">Users</a>
+        </nav>
+
+        <a href="index.html" class="logout">Logout</a>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="navbar">
+            <div>
+                <h3>Users Management</h3>
+                <p>Add or update user information</p>
+            </div>
+
+            <div class="admin-info">
+                <span>AD</span>
+                <div>
+                    <h4>Alex Morgan</h4>
+                    <p>Super Admin</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <a href="users.html" class="back-link">
+                ← Back to Users
+            </a>
+
+            <div class="form-container add-user-form">
+
+                <h1 id="formTitle">Add New User</h1>
+                <p>Enter the user information below.</p>
+
+                <form id="userForm">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Role / Position</label>
+
+                        <select id="role" required>
+                            <option value="">Select a role</option>
+                            <option value="Administrator">Administrator</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Designer">Designer</option>
+                            <option value="Manager">Manager</option>
+                            <option value="HR">HR</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salary">Salary (Annual)</label>
+                        <input type="number" id="salary" placeholder="Enter annual salary" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter email address" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="primary-btn">
+                            Save User
+                        </button>
+
+                        <a href="users.html" class="cancel-btn">
+                            Cancel
+                        </a>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="JS/add-user.js"></script>
+
+</body>
+
+</html>
